@@ -29,7 +29,6 @@ public class Client {
     return server.ping();
   }
   public String toString() {
-	System.out.println("stop");
     return name + "@" + address;
   }
 }
