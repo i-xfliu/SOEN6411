@@ -12,15 +12,15 @@ public class main {
 		jill.connect(host); // accommodate
 		jekyll.connect(host); // accommodate
 		jekyll.disconnect(host); // accommodate
-		
-		jack.getAllClients(); // suspicious: Do not accommodate, blacklist and disconnect
-		
-		jill.getAllClients(); // already blacklisted; Do not accommodate and disconnect
-		jill.getAllClients(); // not accommodated
-		jill.disconnect(host); // not accommodated
-		jill.connect(host); // recorded, but not accommodated
-		hyde.connect(host); // recorded, but not accommodated
-		host.getClients();
+//		
+//		jack.getAllClients(); // suspicious: Do not accommodate, blacklist and disconnect
+//		
+//		jill.getAllClients(); // already blacklisted; Do not accommodate and disconnect
+//		jill.getAllClients(); // not accommodated
+//		jill.disconnect(host); // not accommodated
+//		jill.connect(host); // recorded, but not accommodated
+//		hyde.connect(host); // recorded, but not accommodated
+//		host.getClients();
 		
 	}
 
