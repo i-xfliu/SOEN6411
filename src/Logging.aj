@@ -1,4 +1,5 @@
 public privileged aspect Logging {
+	declare precedence: Logging, Authentication;
 	//check log in information
 	 pointcut connection (Client client, Server server):
 	         call(void Server.attach(..)) &&
@@ -14,7 +15,7 @@ public privileged aspect Logging {
 	     System.out.println("CONNECTION REQUEST >>> " + client.toString() + " requests connection to " + server.toString() +".\n");
 	 }
 	 after(Client client, Server server): connection (client, server) {
-	     System.out.println("Connection established between" + client.toString() + " and " + server.toString() + ".");
+	     System.out.println("Connection established between " + client.toString() + " and " + server.toString() + ".");
 	     System.out.println("Client logged in: " + server.clients);
 	     //server.getClients();
 	     System.out.println("\n");
